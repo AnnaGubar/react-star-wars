@@ -1,8 +1,5 @@
 // res.ok, res.status
 
-const SWAPI_BASE_URL = "https://swapi.dev/api/";
-const SWAPI_PEOPLE_SEARCH = "people";
-
 export const getApiResource = async (url) => {
   try {
     // запрос по URL
@@ -24,8 +21,8 @@ export const getApiResource = async (url) => {
   }
 };
 
-(async () => {
-  // распаковка данных с json-формата
-  const result = await getApiResource(SWAPI_BASE_URL + SWAPI_PEOPLE_SEARCH);
-  console.log(result);
-})();
+// (async () => {
+//   // распаковка данных с json-формата
+//   const result = await getApiResource(SWAPI_BASE_URL + SWAPI_PEOPLE_SEARCH);
+//   console.log(result);
+// })();
