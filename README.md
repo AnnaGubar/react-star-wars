@@ -1,4 +1,4 @@
-https://swapi.dev/documentation
-https://starwars-visualguide.com/#/
+- https://swapi.dev/documentation
+- https://starwars-visualguide.com/#/
 
-https://snippet-generator.app
+- https://snippet-generator.app
