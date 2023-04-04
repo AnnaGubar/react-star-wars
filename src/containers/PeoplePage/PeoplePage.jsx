@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PeopleList from "../../components/PeoplePage/PeopleList"
 import { getApiResource } from "../../utils/network";
 import { API_PEOPLE } from "../../constants/api";
 import {getPeopleId,getPeopleImg} from "../../services/getPeopleData"
@@ -29,15 +30,7 @@ const PeoplePage = () => {
 
   return (
     <>
-      {people && (
-        <ul>
-          {people.map(({ id,name, img }) => (
-            <li key={id}>
-              <img src={img} alt={name} />
-              {name}</li>
-          ))}
-        </ul>
-      )}
+      {people && <PeopleList people={people}/>}
     </>
   );
 };
