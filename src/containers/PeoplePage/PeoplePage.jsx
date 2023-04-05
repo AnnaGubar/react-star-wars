@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import PeopleList from "../../components/PeoplePage/PeopleList";
-import { getApiResource } from "../../utils/network";
-import { API_PEOPLE } from "../../constants/api";
-import { getPeopleId, getPeopleImg } from "../../services/getPeopleData";
-import { withErrorApi } from "../../hoc-helpers/withErrorApi";
+import PeopleList from "@components/PeoplePage/PeopleList";
+import { getApiResource } from "@utils/network";
+import { API_PEOPLE } from "@constants/api";
+import { getPeopleId, getPeopleImg } from "@services/getPeopleData";
+import { withErrorApi } from "@hoc-helpers/withErrorApi";
 // import s from "./PeoplePage.module.css";
 
 const PeoplePage = ({ setErrorApi }) => {
@@ -33,9 +33,8 @@ const PeoplePage = ({ setErrorApi }) => {
   };
 
   useEffect(() => {
-    getPeopleList(API_PEOPLE);
-    // getPeopleList(API_PEOPLE + 5);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    getPeopleList(API_PEOPLE); // correct url
+    // getPeopleList(API_PEOPLE + 5); // invalid url
   }, []);
 
   return <>{people && <PeopleList people={people} />}</>;

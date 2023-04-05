@@ -1,5 +1,5 @@
 // import cn from "classnames";
-import PeoplePage from "../PeoplePage"
+import PeoplePage from "@containers/PeoplePage"
 // import s from "./App.module.css";
 
 const App = () => {

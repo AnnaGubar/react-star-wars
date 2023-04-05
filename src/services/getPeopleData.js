@@ -3,12 +3,12 @@ import {
   SWAPI_PEOPLE,
   GUIDE_IMG_EXTENTION,
   GUIDE_IMG_PERSON,
-} from "../constants/api";
+} from "@constants/api";
 
 const getId = (url, category) => {
-  // /\//g - избавляемся от слешей вокруг id
-  const id = url.replace(SWAPI_BASE_URL + category, "").replace(/\//g, "");
-  return id;
+  // /\//g - избавляет от слешей вокруг id - /5/
+  // https://starwars-visualguide.com/assets/img/characters/5/
+  return url.replace(SWAPI_BASE_URL + category, "").replace(/\//g, "");
 };
 
 export const getPeopleId = (url) => getId(url, SWAPI_PEOPLE);
