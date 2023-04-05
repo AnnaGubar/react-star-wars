@@ -1,4 +1,3 @@
-// import cn from "classnames";
 import PeoplePage from "@containers/PeoplePage"
 // import s from "./App.module.css";
 

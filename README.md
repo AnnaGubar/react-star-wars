@@ -11,10 +11,11 @@
 - **cross-env** (changes port in scripts in package.json)
 - **High Order Compomponent**
 - **Alias**
+
   - https://github.com/timarney/react-app-rewired
   - https://github.com/oklas/react-app-rewire-alias
 
-  1. install `npm i --save-dev react-app-rewired react-app-rewire-alias`
-  2. do changes in scripts in package.json
-  3. create root file config-overrides.js and add some code
-  4. change paths in all files
+    - install `npm i --save-dev react-app-rewired react-app-rewire-alias`
+    - do changes in scripts in package.json
+    - create root file config-overrides.js and add some code
+    - change paths in all files (in relation to src folder)
