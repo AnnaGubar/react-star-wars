@@ -1,9 +1,12 @@
+import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
+
+import { withErrorApi } from "@hoc-helpers/withErrorApi";
 import PeopleList from "@components/PeoplePage/PeopleList";
 import { getApiResource } from "@utils/network";
-import { API_PEOPLE } from "@constants/api";
 import { getPeopleId, getPeopleImg } from "@services/getPeopleData";
-import { withErrorApi } from "@hoc-helpers/withErrorApi";
+import { API_PEOPLE } from "@constants/api";
+
 // import s from "./PeoplePage.module.css";
 
 const PeoplePage = ({ setErrorApi }) => {
@@ -40,4 +43,9 @@ const PeoplePage = ({ setErrorApi }) => {
   return <>{people && <PeopleList people={people} />}</>;
 };
 
+PeoplePage.propTypes = {
+  setErrorApi: PropTypes.func.isRequired,
+};
+
 export default withErrorApi(PeoplePage);
+

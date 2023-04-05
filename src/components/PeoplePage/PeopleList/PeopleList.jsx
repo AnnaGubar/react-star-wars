@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import s from "./PeopleList.module.css";
 
 const PeopleList = ({ people }) => {
@@ -13,6 +15,16 @@ const PeopleList = ({ people }) => {
       ))}
     </ul>
   );
+};
+
+PeopleList.propTypes = {
+  people: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default PeopleList;
