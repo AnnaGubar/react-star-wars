@@ -22,4 +22,7 @@
 
 - **Prop-types**
   - https://github.com/facebook/prop-types
-    - `npm install --save prop-types`
+    - `npm i --save prop-types`
+
+- **React Router**
+  - `npm i --save react-router react-router-dom`

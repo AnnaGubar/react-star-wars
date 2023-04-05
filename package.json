@@ -7,8 +7,9 @@
     "cross-env": "^7.0.3",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-    
+    "react-dom": "^18.2.0",
+    "react-router": "^6.10.0",
+    "react-router-dom": "^6.10.0"
   },
   "scripts": {
     "start": "cross-env PORT=4444 react-app-rewired start",

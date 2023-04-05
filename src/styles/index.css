@@ -1,14 +1,24 @@
 :root {
   --font-family-main: sans-serif;
   --font-size-header: 26px;
+  --font-bold: 600;
   --spacing-medium: 20px;
+  --spacing-large: 30px;
+  --text-shadow-yellow: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
 
   --color-white: #f8f8f8f0;
   --color-yellow: #ffff00;
-  --color-dark-grey: #2d2d2d;
+  --color-blue: #6a83fb;
+  --color-violet: #ae72c2;
+  --color-dark-grey: #1d1d1d;
   --color-black: #000;
 
+  --theme-color-header: #cccc46;
+
   --border-radius-small: 5px;
+
+  --transition: .4s;
+
 }
 
 body {
@@ -16,4 +26,12 @@ body {
   padding: 0;
   background-color: var(--color-dark-grey);
   font-family: var(--font-family-main);
+}
+
+.header__text{
+  line-height: 1.7;
+  font-size: var(--font-size-header);
+  text-shadow: 0 0 2px var(--color-black);
+  color: var(--theme-color-header);
+  transition: color var(--transition);
 }
