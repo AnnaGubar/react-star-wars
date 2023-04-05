@@ -3,7 +3,7 @@ display:flex;
 flex-wrap: wrap;
 margin: 0;
 padding: 0;
-list-style-type: none;
+list-style: none;
 }
 
 .list__item{
@@ -12,12 +12,14 @@ margin: var(--spacing-medium);
 border-radius: var(--border-radius-small)l;
 background-color: var(--color-white);
 cursor: pointer;
+border-radius: var(--border-radius-small) var(--border-radius-small) 0 0 ;
 }
 
 .list__item a{
   text-decoration: none;
   color: var(--color-black);
   text-align: center;
+  
 }
 
 .person__photo{
@@ -26,6 +28,7 @@ height: 260px;
 object-fit: cover;
 object-position: top center;
 border-radius: var(--border-radius-small) var(--border-radius-small) 0 0 ;
+
 }
 
 /* .person__name{
