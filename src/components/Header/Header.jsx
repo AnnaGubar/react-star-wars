@@ -25,6 +25,16 @@ const Header = () => {
             People
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/not-found"
+            className={({ isActive }) =>
+              isActive ? s["list__container-activeLink"] : s["list__container-link"]
+            }
+          >
+            Not Found
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
