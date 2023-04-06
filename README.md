@@ -9,6 +9,8 @@
 ---
 
 - **cross-env** (changes port in scripts in package.json)
+  - `npm i cross-env`
+  
 - **High Order Compomponent**
 - **Alias**
 
@@ -21,6 +23,7 @@
     - change paths in all files (in relation to src folder)
 
 - **Prop-types**
+
   - https://github.com/facebook/prop-types
     - `npm i --save prop-types`
 

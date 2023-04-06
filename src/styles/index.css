@@ -1,10 +1,13 @@
 :root {
   --font-family-main: sans-serif;
   --font-size-header: 26px;
+  --font-size-main: 16px;
   --font-bold: 600;
   --spacing-medium: 20px;
   --spacing-large: 30px;
   --text-shadow-yellow: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
+
+  --width-max:1200px;
 
   --color-white: #f8f8f8f0;
   --color-yellow: #ffff00;
@@ -14,6 +17,8 @@
   --color-black: #000;
 
   --theme-color-header: #cccc46;
+
+  --theme-default-bg-image: url(@static/space-background.jpg);
 
   --border-radius-small: 5px;
 
@@ -26,6 +31,16 @@ body {
   padding: 0;
   background-color: var(--color-dark-grey);
   font-family: var(--font-family-main);
+  font-size: var(--font-size-main);
+  background-image: var(--theme-default-bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-attachment: fixed;
+}
+
+img{
+  display: block;
 }
 
 .header__text{
