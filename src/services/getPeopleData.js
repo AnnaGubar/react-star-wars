@@ -13,3 +13,5 @@ const getId = (url, category) => {
 
 export const getPeopleId = (url) => getId(url, SWAPI_PEOPLE);
 export const getPeopleImg = (id) => `${GUIDE_IMG_PERSON}${id}${GUIDE_IMG_EXTENTION}`;
+
+

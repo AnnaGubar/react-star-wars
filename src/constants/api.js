@@ -1,8 +1,9 @@
 //swapi
 export const SWAPI_BASE_URL = "https://swapi.dev/api/";
 export const SWAPI_PEOPLE = "people";
+export const SWAPI_PARAM_PAGE = "/?page=";
 
-export const API_PEOPLE = SWAPI_BASE_URL + SWAPI_PEOPLE;
+export const API_PEOPLE = SWAPI_BASE_URL + SWAPI_PEOPLE + SWAPI_PARAM_PAGE;
 
 //visualguide
 const GUIDE_BASE_URL = "https://starwars-visualguide.com/";
